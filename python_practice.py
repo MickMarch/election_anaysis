@@ -1,15 +1,21 @@
-# counties_dict = {"Arapahoe": 422829, "Denver": 463353, "Jefferson": 432438}
-
-# for county, voters in counties_dict.items():
-#     print(f"{county} county had {voters:,} registered voters")
-
-voting_data = [
-    {"county": "Arapahoe", "registered_voters": 422829},
-    {"county": "Denver", "registered_voters": 463353},
-    {"county": "Jefferson", "registered_voters": 432438},
+grocery_list = [
+    "Milk",
+    "Bread",
+    "Eggs",
+    "Peanut Butter",
+    "Jelly"
 ]
 
-for county_dict in voting_data:
-    print(
-        f'{county_dict["county"]} county had {county_dict["registered_voters"]:,} registered voters.'
-    )
+print(grocery_list)
+
+grocery_list[grocery_list.index("Peanut Butter")] = "Almond butter"
+
+print(grocery_list)
+
+grocery_list.pop(grocery_list.index("Jelly"))
+
+print(grocery_list)
+
+grocery_list.append("Coffee")
+
+print(grocery_list)
