@@ -43,7 +43,7 @@ The script currently could be used to analyze election data that follows the sam
 This script could be modified in a few ways for elections that have different requirements of analysis. 
 
 
-### Majority/Minority Win
+### Adding Majority/Minority Win Analysis to Results
 
 If the analysis needed to declare whether a candidate won by majority vote, the results portion of the script could be modified as such:
 ```python3
@@ -58,11 +58,11 @@ winning_candidate_summary = (
 )
 ```
 
-### More Points of Analysis
+### Adding More Points of Analysis
 
-If the script needed to analyze the political parties that the candidates are part of, the code would need to have a few new variables to add to the code.
+If the script needed to analyze another point, like the political parties that the candidates are part of, the code would need to have a few new variables to add to the code.
 
-Just like the candidates and counties, we would need similar variables:
+Just like the candidates and counties, we would need to create similar variables:
 ```python3
 party_list = []
 party_votes = {}
@@ -93,4 +93,4 @@ if party_name not in party_list:
 party_votes[party_name] += 1
 ```
 
-With this, we are able to add any new type of data to count. It isn't just limited to counting political parties.
+**With only slight modifications to the script, functionality can be added for many new types of data points to track in different types of elections.**
